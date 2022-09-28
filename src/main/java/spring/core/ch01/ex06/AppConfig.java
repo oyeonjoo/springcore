@@ -9,6 +9,6 @@ import org.springframework.context.annotation.FilterType;
 @ComponentScan(basePackages = "spring.core.ch01.ex06",
 								excludeFilters = @Filter(type = FilterType.ANNOTATION,
 								classes = (NoComponent.class)))
-public class AppConfig {
+public class AppConfig { // NoComponent한 것 빼고 ioc 하겠다
 
 }

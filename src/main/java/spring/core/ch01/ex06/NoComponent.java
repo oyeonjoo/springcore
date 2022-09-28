@@ -7,7 +7,7 @@ import java.lang.annotation.Target;
 
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface NoComponent {
+public @interface NoComponent { // 컴포넌트하지 않으려고 만드는 어노테이션
 
 }
 

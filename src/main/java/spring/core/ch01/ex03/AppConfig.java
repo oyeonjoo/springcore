@@ -21,7 +21,7 @@ public class AppConfig {
 	
 	@Bean
 	public Shooter shooter1() {
-		return new Shooter("최한석", pistol());
+		return new Shooter("최한석", pistol()); // pistol은 메소드
 	}
 	
 	@Bean
@@ -33,3 +33,4 @@ public class AppConfig {
 		return shooter;
 	}
 }
+// bean의 정보를 메소드로 적는다, 단점은 내가 직접 new를 써야하는 것이다. 장점은 어노테이션만 있으면 직접 쓰지 않아도 된다는 것이다.

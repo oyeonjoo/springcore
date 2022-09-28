@@ -15,4 +15,4 @@ public class Shooter {
 	}
 }
 
-//계획한 null은 if로 작성하는게 좋고, 계획되지 않은 null을 try로 감싸는게 좋음
+// 계획한(의도한) null은 if로 작성하는게 좋고, 계획되지 않은(어쩔 수 없이 발생하는) null은 try로 감싸는게 좋음

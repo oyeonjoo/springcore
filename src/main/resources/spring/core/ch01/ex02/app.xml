@@ -8,12 +8,12 @@
 	<bean id='rifle' class='spring.core.ch01.ex01.Rifle'/>
 	
 	<bean id='shooter1' class='spring.core.ch01.ex02.Shooter'>
-		<constructor-arg value='최한석'/>
-		<constructor-arg ref='pistol'/>
+		<constructor-arg value='최한석'/> <!-- 생성자를 통해서 di를 표현, 파라미터를 넣어준다 -->
+		<constructor-arg ref='pistol'/> <!-- arg가 객체이면 래퍼런스를 써준다 -->
 	</bean>
 	
 	<bean id='shooter2' class='spring.core.ch01.ex02.Shooter'>
-		<property name='name' value='한아름'/>
-		<property name='gun' ref='rifle'/>
+		<property name='name' value='한아름'/> <!-- setter를 통해서 di를 표현, 파라미터를 넣어준다-->
+		<property name='gun' ref='rifle'/> <!-- 마이바티스에서 사용했었다 -->
 	</bean>
-</beans>
+</beans> <!-- 컨테이너가 무슨 기능을 만들면 될지 내가 문서에 작성하는 것이다, IOC -->
